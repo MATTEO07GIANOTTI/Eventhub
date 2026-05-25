@@ -1,0 +1,22 @@
+openapi: 3.0.3
+info:
+  title: EventHub API
+  version: 1.0.0
+paths:
+  /api/auth/register:
+    post:
+      summary: Registrazione utente
+  /api/auth/login:
+    post:
+      summary: Login utente
+  /api/events:
+    get:
+      summary: Lista eventi
+    post:
+      summary: Crea evento (organizer/admin)
+  /api/events/{event_id}/book:
+    post:
+      summary: Iscrizione evento
+  /api/events/{event_id}/reviews:
+    post:
+      summary: Inserisci recensione
